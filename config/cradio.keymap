@@ -43,7 +43,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  ,/<     │  H       │   B      │ K        │   TAB    │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp COMMA  &kp H       &kp B    &kp K       &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt 1_l ENTER &kp SPACE      &kp BKSP   &lt 2_l DEL
+                                           &lt 1 ENTER &kp SPACE      &kp BKSP   &lt 2 DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
