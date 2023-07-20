@@ -52,13 +52,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│   ESC    │  UP ARW  │  _       │  /       │    &     │   │ENTER     │    7     │     8    │   9      │    ;/:   │
-            &kp ESC    &kp UARW   &kp UNDER  &kp FSLH   &kp AMPS      &kp ENTER   &kp N7     &kp N8    &kp N9      &kp SEMI
+            &kp ESC    &kp UARW   &kp UNDER  &kp FSLH   &kp AMPS        &kp ENTER  &kp N7     &kp N8    &kp N9      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LEFT ARW │ DOWN ARW │ RGHT ARW │   SHFT   │    LPAR  │   │    RPAR  │     4    │   5      │    6     │   0      │
-            &kp LARW    &kp DARW     &kp RARW  &kp RSHFT   &kp LPAR     &kp RPAR   &kp N4      &kp N5    V&kp N6     &kp N0
+            &kp LARW    &kp DARW     &kp RARW  &kp RSHFT   &kp LPAR     &kp RPAR   &kp N4      &kp N5    &kp N6     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS LCK │  =       │  ~       │  LBKT    │  RBKT    │   │   0      │   1      │   2      │   3      │   \/|    │
-           &kp CAPS    &kp EQUAL     &kp TILDA &kp LBKT   &kp RBKT      &kp N0    &kp N1     &kp N2     &kp N3      &kp BSLH
+           &kp CAPS    &kp EQUAL     &kp TILDA &kp LBKT   &kp RBKT      &kp N0     &kp N1     &kp N2     &kp N3      &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
