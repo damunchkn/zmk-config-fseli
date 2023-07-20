@@ -57,8 +57,8 @@
         //│ LEFT ARW │ DOWN ARW │ RGHT ARW │   SHFT   │    (     │   │    )     │     4    │   5      │    6     │   0      │
             &kp LARW    &kp DARW     &kp RARW  &kp RSHFT   &kp LPAR     &kp RPAR   &kp N4      &kp N5    V&kp N6     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS LCK │  =       │  ~       │  [       │  ]       │   │PRNTSCREEN│  1      │   2      │   3      │   \/|    │
-           &kp CAPS    &kp EQUAL     &kp TILDA &kp LBKT   &kp RBKT      &kp N   &kp N1     &kp N2     &kp N3      &kp BSLH
+        //│ CAPS LCK │  =       │  ~       │  [       │  ]       │   │PRNTSCREEN│   1      │   2      │   3      │   \/|    │
+           &kp CAPS    &kp EQUAL     &kp TILDA &kp LBKT   &kp RBKT      &kp N     &kp N     &kp N2     &kp N3      &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
