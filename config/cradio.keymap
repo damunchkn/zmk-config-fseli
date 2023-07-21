@@ -37,8 +37,8 @@
         //│  Q       │  W       │  F       │  P       │  ./>     │   │  J       │  L       │  U       │  Y       │  '/"     │
             &kp Q      &kp W      &kp F      &kp P      &kp PERIOD     &kp J      &kp L      &kp U      &kp Y      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ SHFT|A   │  GUI|R   │  CTRL|S  │  T       │  G       │   │  M       │  N       │  ALT|E   │  SHFT|I  │   O      │
-           &hm LSHFT A &hm LGUI R &hm LCTRL S &kp T     &kp G          &kp M      &kp N      &hm RCTRL E &hm RALT I &hm LSHFT O
+        //│ SHFT|A   │  CTRL|R  │  GUI|S   │  T       │  G       │   │  M       │  N       │  CTRL|E  │  ALT|I   │   SHFT|O │
+           &hm LSHFT A &hm LCTRL R &hm LGUI S &kp T     &kp G          &kp M      &kp N      &hm RCTRL E &hm RALT I &hm LSHFT O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  ,/<     │  H       │   B      │ K        │   TAB    │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp COMMA  &kp H       &kp B    &kp K       &kp TAB
@@ -51,14 +51,14 @@
         1_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   ESC    │  UP ARW  │  _       │  /       │    &     │   │ENTER     │    7     │     8    │   9      │    ;/:   │
-            &kp ESC    &kp UARW   &kp UNDER  &kp FSLH   &kp AMPS        &kp ENTER  &kp N7     &kp N8    &kp N9      &kp SEMI
+        //│   ESC    │    /     │  UARW    │  _       │    &     │   │ENTER     │    7     │     8    │   9      │    ;/:   │
+            &kp ESC    &kp FSLH   &kp UARW  &kp UNDER   &kp AMPS        &kp ENTER  &kp N7     &kp N8    &kp N9      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LEFT ARW │ DOWN ARW │ RGHT ARW │   SHFT   │    LPAR  │   │    RPAR  │     4    │   5      │    6     │   0      │
-            &kp LARW    &kp DARW     &kp RARW  &kp RSHFT   &kp LPAR     &kp RPAR   &kp N4      &kp N5    &kp N6     &kp N0
+        //│   SHFT   │   LARW   │   DARW   │   RARW   │    TAB   │   │    RBKT  │    4     │    5     │    6     │   0      │
+            &kp LSHFT   &kp LARW   &kp DARW  &kp RARW    &kp TAB      &kp RBKT   &kp N4      &kp N5    &kp N6     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS LCK │  =       │  ~       │  LBKT    │  RBKT    │   │   0      │   1      │   2      │   3      │   \/|    │
-           &kp CAPS    &kp EQUAL     &kp TILDA &kp LBKT   &kp RBKT      &kp N0     &kp N1     &kp N2     &kp N3      &kp BSLH
+        //│ CAPS LCK │  =       │  ~       │  LPAR    │  RPAR    │   │   LBKT   │   1      │   2      │   3      │   \/|    │
+           &kp CAPS    &kp EQUAL  &kp TILDA   &kp LPAR   &kp RPART      &kp LBKT   &kp N1     &kp N2     &kp N3      &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
