@@ -61,8 +61,8 @@
         //│   SHFT   │   LARW   │   DARW   │   RARW   │    ENTER │   │    RBKT  │    4     │    5     │    6     │   0      │
             &kp LSHFT   &kp LARW   &kp DARW  &kp RARW    &kp ENTER     &kp RBKT   &kp N4      &kp N5    &kp N6     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS LCK │  =       │  ~       │  DLLR $  │  PRCNT % │   │   LBKT   │   1      │   2      │   3      │   \/|    │
-           &kp CAPS    &kp EQUAL  &kp TILDA   &kp DLLR   &kp PRCNT     &kp LBKT   &kp N1     &kp N2     &kp N3      &kp BSLH
+        //│ CAPS LCK │  =       │  `       │  DLLR $  │  PRCNT % │   │   LBKT   │   1      │   2      │   3      │   \/|    │
+           &kp CAPS    &kp EQUAL  &kp GRAVE   &kp DLLR   &kp PRCNT     &kp LBKT   &kp N1     &kp N2     &kp N3      &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
