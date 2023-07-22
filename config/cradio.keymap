@@ -55,8 +55,8 @@
         lower_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   ESC    │    @     │  UARW    │  _       │    &     │   │    !     │    7     │     8    │   9      │    ASTRK │
-            &kp ESC    &kp AT    &kp UARW  &kp UNDER   &kp AMPS        &kp EXCL    &kp N7     &kp N8    &kp N9      &kp ASTRK
+        //│   ESC    │    @     │  UARW    │  _       │TOG GAME L│   │    &     │    7     │     8    │   9      │    ASTRK │
+            &kp ESC    &kp AT    &kp UARW  &kp UNDER   &tog GAME       &kp AMPS  &kp N7     &kp N8    &kp N9      &kp ASTRK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   SHFT   │   LARW   │   DARW   │   RARW   │    ENTER │   │    RBKT  │    4     │    5     │    6     │   0      │
             &kp LSHFT   &kp LARW   &kp DARW  &kp RARW    &kp ENTER     &kp RBKT   &kp N4      &kp N5    &kp N6     &kp N0
@@ -75,8 +75,8 @@
         //│    F1    │   F2     │  F3      │  F4      │  F5      │   │    F6    │  F7      │  F8      │  F9      │  F10     │
             &kp F1     &kp F2    &kp F3     &kp F4     &kp F5         &kp F6     &kp F7      &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   SHFT   │  PLUS    │   HOME   │   END    │TOG GAME L│   │  HASH    │  LPAR    │  RPAR    │  /|?     │  ;|:     │
-            &kp LSHFT   &kp PLUS    &kp HOME   &kp END  &tog GAME     &kp HASH    &kp LPAR   &kp RPAR    &kp FSLH   &kp SEMI
+        //│   SHFT   │  PLUS    │   HOME   │   END    │    !     │   │  HASH    │  LPAR    │  RPAR    │  /|?     │  ;|:     │
+            &kp LSHFT   &kp PLUS    &kp HOME   &kp END  &tog EXCL     &kp HASH    &kp LPAR   &kp RPAR    &kp FSLH   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   F11    │    F12   │    ^     │    -     │          │   │          │          │          │          │          │
             &kp F11     &kp F12     &kp CARET &kp MINUS  &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
