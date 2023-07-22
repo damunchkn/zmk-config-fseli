@@ -42,7 +42,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp PERIOD     &kp J      &kp L      &kp U      &kp Y      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ SHFT|A   │  CTRL|R  │  GUI|S   │  T       │  G       │   │  M       │  N       │  CTRL|E  │  ALT|I   │   SHFT|O │
-           &mt LSHFT A &mt LCTRL R &mt LGUI S &kp T     &kp G          &kp M      &kp N     &mt RCTRL E &mt RALT I &mt LSHFT O
+           &ht LSHFT A &ht LCTRL R &ht LGUI S &kp T     &kp G          &kp M      &kp N     &ht RCTRL E &ht RALT I &ht LSHFT O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  ,/<     │  H       │   B      │ K        │   TAB    │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp COMMA  &kp H       &kp B    &kp K       &kp TAB
