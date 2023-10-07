@@ -17,9 +17,9 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <750>;
-            quick-tap-ms = <5000>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <300>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -42,12 +42,12 @@
             &kp Q      &kp W      &kp F      &kp P      &kp PERIOD     &kp J      &kp L      &kp U      &kp Y      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ SHFT|A   │  CTRL|R  │  GUI|S   │  T       │  G       │   │  M       │  N       │  CTRL|E  │  ALT|I   │   SHFT|O │
-           &mt LSHFT A &mt LCTRL R &mt LGUI S &kp T     &kp G          &kp M      &kp N     &mt RCTRL E &mt RALT I &mt LSHFT O
+           &mt LSHFT A &mt LCTRL R &mt LGUI S &mt LALT T &kp G          &kp M      &mt RALT N &mt RGUI E &mt RCTRL I &mt LSHFT O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  ,/<     │  H       │   B      │ K        │   TAB    │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp COMMA  &kp H       &kp B    &kp K       &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &lt LOWER ENTER &kp SPACE    &kp BSPC  &lt RAISE DEL
+                                        &lt LOWER  ENTER &kp SPACE    &kp BSPC  &lt RAISE DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
