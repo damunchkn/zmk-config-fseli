@@ -18,8 +18,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <500>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <50>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -30,11 +30,21 @@
             label = "REQUIRE_PRIOR_IDLE";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <500>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <50>;
             require-prior-idle-ms = <300>;
             bindings = <&kp>, <&kp>;
         };
+};
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
 };
 
     /
@@ -48,7 +58,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp PERIOD     &kp J      &kp L      &kp U      &kp Y      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ SHFT|A   │  CTRL|R  │  GUI|S   │  T       │  G       │   │  M       │  N       │  CTRL|E  │  ALT|I   │   SHFT|O │
-           &rpi LSHFT A &rpi LCTRL R &rpi LGUI S &rpi LALT T &kp G     &kp M &rpi RALT N &rpi RGUI E &rpi RCTRL I &rpi LSHFT O
+           &ht LSHFT A &ht LCTRL R &ht LGUI S &ht LALT T &kp G          &kp M &ht RALT N    &ht RGUI E &ht RCTRL I &ht LSHFT O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  ,/<     │  H       │   B      │ K        │   TAB    │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp COMMA  &kp H       &kp B    &kp K       &kp TAB
