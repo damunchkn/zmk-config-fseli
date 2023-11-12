@@ -37,6 +37,16 @@
                 , <&macro_release &kp LALT &kp TAB &mo LOWER>
                 ;
         };
+         CbShift: CbShift {
+            label = "CbShift";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
     };
 };
 / {
@@ -53,6 +63,11 @@
             flavor = "slow-release";
             bindings = <&AltTab>;
         };
+        combo_cb_shift {
+            timeout-ms = <25>;
+            key-positions = <13 31>;
+            flavor = "slow-release";
+            bindings = <&CbShift>;
     };
 };
 
