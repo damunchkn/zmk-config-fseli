@@ -51,7 +51,7 @@
             timeout-ms = <25>;
             key-positions = <13 31>;
             flavor = "slow-release";
-            bindings = <AltTab>;
+            bindings = <&AltTab>;
         };
     };
 };
