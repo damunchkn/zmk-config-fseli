@@ -25,16 +25,19 @@
         };
     };
 
-        rpi: require_prior_idle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "REQUIRE_PRIOR_IDLE";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <50>;
-            require-prior-idle-ms = <300>;
-            bindings = <&kp>, <&kp>;
+/ {
+    macros {
+        AltTab: AltTab {
+            label = "AltTab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT &kp TAB &mo LOWER>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LALT &kp TAB &mo LOWER>
+                ;
         };
+    };
 };
 / {
     combos {
@@ -48,7 +51,7 @@
             timeout-ms = <25>;
             key-positions = <13 31>;
             flavor = "slow-release";
-            bindings = <&kp LALT>, <&kp TAB>, <&mo LOWER>;
+            bindings = <AltTab>;
         };
     };
 };
