@@ -65,7 +65,7 @@
         };
         combo_cb_shift {
             timeout-ms = <25>;
-            key-positions = <13 31>;
+            key-positions = <13 14>;
             flavor = "slow-release";
             bindings = <&CbShift>;
     };
