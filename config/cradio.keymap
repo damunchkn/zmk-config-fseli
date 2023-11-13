@@ -18,7 +18,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -94,7 +94,6 @@
 
         game_layer {
             bindings = <
-<<<<<<< HEAD
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │    Q     │   W      │   E      │   R      │   │          │          │          │          │  RESET   │
            &kp ESC     &kp Q     &kp W      &kp E      &kp R           &trans    &trans     &trans     &trans    &sys_reset
@@ -107,9 +106,7 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp LALT   &kp SPACE       &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-=======
-&kp ESC  &kp Q  &kp W  &kp E
->>>>>>> d9ddf92780e477f9a7f7e346335fd8f8431e705e
+
             >;
         };
     };
