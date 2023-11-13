@@ -37,14 +37,24 @@
                 , <&macro_release &kp LALT &kp TAB &mo LOWER>
                 ;
         };
-         CbShift: CbShift {
-            label = "CbShift";
+         CbShft: CbShft {
+            label = "CbShft";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_pause_for_release>
                 , <&macro_release &kp LSHFT>
+                ;
+        };
+        CbCtrl: CbCtrl {
+            label = "CbCtrl";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -63,11 +73,17 @@
             flavor = "slow-release";
             bindings = <&AltTab>;
         };
-        combo_cb_shift {
+        combo_cb_shft {
             timeout-ms = <25>;
             key-positions = <13 14>;
             flavor = "slow-release";
-            bindings = <&CbShift>;
+            bindings = <&CbShft>;
+    };
+        combo_cb_ctrl {
+            timeout-ms = <25>;
+            key-positions = <12 13>;
+            flavor = "slow-release";
+            bindings = <&CbCtrl>;
     };
 };
 
