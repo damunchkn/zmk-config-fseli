@@ -83,13 +83,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │    Q     │   W      │   E      │   R      │   │          │          │          │          │  RESET   │
-        // &kp ESC     &kp Q     &kp W      &kp E      &kp R           &trans    &trans     &trans     &trans    &sys_reset
+           &kp ESC     &kp Q     &kp W      &kp E      &kp R           &trans    &trans     &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   SHFT   │    A     │   S      │   D      │    F     │   │          │          │          │          │BOOTLOADER│
-        //  &kp LSHFT    &kp A     &kp S      &kp D       &kp F         &trans     &trans     &trans     &trans    &bootloader
+            &kp LSHFT    &kp A     &kp S      &kp D       &kp F         &trans     &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   CTRL   │   Z      │     X    │    C     │    V     │   │          │          │          │          │          │
-        //  &kp LCTRL  &kp Z        &kp X     &kp C      &kp V          &trans     &trans     &trans     &trans    &to DEFAULT
+            &kp LCTRL  &kp Z        &kp X     &kp C      &kp V          &trans     &trans     &trans     &trans    &to DEFAULT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp LALT   &kp SPACE       &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
