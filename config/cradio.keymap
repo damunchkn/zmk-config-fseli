@@ -60,6 +60,100 @@
             slow-release;
             layers = <0>;
         };
+
+        CbAltTab {
+            bindings = <&alt_tab>;
+            key-positions = <30 12>;
+        };
+
+        CbEsc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        CbPass {
+            bindings = <&password>;
+            key-positions = <2 1>;
+        };
+
+        CbEmail {
+            bindings = <&email>;
+            key-positions = <3 2>;
+        };
+
+        CbCopy {
+            bindings = <&kp K_COPY>;
+            key-positions = <30 13>;
+        };
+
+        CbPaste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <30 12>;
+        };
+
+        CbUndo {
+            bindings = <&Undo>;
+            key-positions = <30 11>;
+        };
+
+        CbRepeat {
+            bindings = <&key_repeat>;
+            key-positions = <30 10>;
+        };
+
+        CbEnd {
+            bindings = <&kp END>;
+            key-positions = <13 11>;
+        };
+
+        CbHome {
+            bindings = <&kp HOME>;
+            key-positions = <12 10>;
+        };
+
+        CkBootloader {
+            bindings = <&bootloader>;
+            key-positions = <3 2 1 0>;
+        };
+
+        CbPause {
+            bindings = <&kp C_PAUSE>;
+            key-positions = <14 13>;
+        };
+    };
+
+    macros {
+        password: password {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp LS(L) &kp I &kp N0 &kp N8 &kp N1 &kp N3 &kp N0 &kp N7 &kp POUND &kp N1 &kp N3>;
+            label = "PASSWORD";
+        };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp S &kp N &kp I &kp P &kp E &kp S &kp E &kp L &kp I &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(TAB) &mo 1>,
+                <&macro_pause_for_release>,
+                <&kp LA(TAB) &mo 1>;
+
+            label = "ALT_TAB";
+        };
+
+        Undo: Undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "UNDO";
+        };
     };
 
     keymap {
@@ -67,46 +161,37 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P            &kp PERIOD    &kp J      &kp L          &kp U  &kp Y  &kp SQT
-&kp A  &kp R  &kp S  &kp T            &kp G         &kp M      &kp N          &kp E  &kp I  &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V         &kp COMMA  &kp H          &kp B  &kp K  &kp TAB
-                     &lt LOWER ENTER  &kp SPACE     &kp BSPC   &lt RAISE DEL
+&kp Q  &kp W  &kp F  &kp P        &kp PERIOD    &kp J      &kp L      &kp U  &kp Y  &kp SQT
+&kp A  &kp R  &kp S  &kp T        &kp G         &kp M      &kp N      &kp E  &kp I  &kp O
+&kp Z  &kp X  &kp C  &kp D        &kp V         &kp COMMA  &kp H      &kp B  &kp K  &kp TAB
+                     &lt 0 ENTER  &kp SPACE     &kp BSPC   &lt 2 DEL
             >;
         };
 
         nav_layer {
             bindings = <
-&kp ESC    &kp AT    &kp UARW  &kp UNDER  &tog GAME    &kp AMPS   &kp N7  &kp N8  &kp N9  &kp ASTRK
-&kp LSHFT  &kp LARW  &kp DARW  &kp RARW   &kp ENTER    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0
-&kp CAPS   &kp LBRC  &kp RBRC  &kp LBKT   &kp RBKT     &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BSLH
-                               &trans     &trans       &trans     &trans
+&kp SLASH  &kp K_VOLUME_DOWN2  &kp UP_ARROW  &kp K_VOLUME_UP2  &tog 3       &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp ASTRK
+&kp LSHFT  &kp LEFT            &kp DOWN      &kp RIGHT         &kp UNDER    &kp SEMI   &kp N4  &kp N5  &kp N6  &kp N0
+&kp CAPS   &kp LBRC            &kp RBRC      &kp LBKT          &kp RBKT     &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BSLH
+                                             &trans            &trans       &trans     &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&kp F1     &kp F2    &kp F3     &kp F4     &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-&kp LSHFT  &kp PLUS  &kp HOME   &kp END    &tog EXCL     &kp HASH      &kp LPAR      &kp RPAR      &kp FSLH      &kp SEMI
-&kp F11    &kp F12   &kp CARET  &kp GRAVE  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                &trans     &trans        &trans        &trans
+&kp F1       &kp F2      &kp F3     &kp F4     &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp F11      &kp F12     &kp HOME   &kp END    &kp EXCL      &kp HASH      &kp LPAR      &kp RPAR      &kp FSLH      &kp AMPS
+&bootloader  &kp DOLLAR  &kp CARET  &kp GRAVE  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                    &trans     &trans        &trans        &trans
             >;
         };
 
         game_layer {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │    Q     │   W      │   E      │   R      │   │          │          │          │          │  RESET   │
-           &kp ESC     &kp Q     &kp W      &kp E      &kp R           &trans    &trans     &trans     &trans    &sys_reset
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   SHFT   │    A     │   S      │   D      │    F     │   │          │          │          │          │BOOTLOADER│
-            &kp LSHFT    &kp A     &kp S      &kp D       &kp F         &trans     &trans     &trans     &trans    &bootloader
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   CTRL   │   Z      │     X    │    C     │    V     │   │          │          │          │          │          │
-            &kp LCTRL  &kp Z        &kp X     &kp C      &kp V          &trans     &trans     &trans     &trans    &to DEFAULT
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp LALT   &kp SPACE       &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-
+&kp ESC    &kp Q  &kp W  &kp E     &kp R        &trans  &trans  &trans  &trans  &sys_reset
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F        &trans  &trans  &trans  &trans  &bootloader
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &trans  &trans  &trans  &trans  &to 1
+                         &kp LALT  &kp SPACE    &trans  &trans
             >;
         };
     };
