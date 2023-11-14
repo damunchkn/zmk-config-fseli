@@ -64,66 +64,80 @@
         CbAltTab {
             bindings = <&alt_tab>;
             key-positions = <30 12>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         CbEsc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            timeout-ms = <25>;
         };
 
         CbPass {
             bindings = <&password>;
             key-positions = <2 1>;
+            timeout-ms = <25>;
         };
 
         CbEmail {
             bindings = <&email>;
             key-positions = <3 2>;
+            timeout-ms = <25>;
         };
 
         CbCopy {
             bindings = <&kp K_COPY>;
             key-positions = <30 13>;
+            timeout-ms = <25>;
         };
 
         CbPaste {
             bindings = <&kp K_PASTE>;
             key-positions = <30 12>;
+            timeout-ms = <25>;
         };
 
         CbUndo {
             bindings = <&Undo>;
             key-positions = <30 11>;
+            timeout-ms = <25>;
         };
 
         CbRepeat {
             bindings = <&key_repeat>;
             key-positions = <30 10>;
+            timeout-ms = <25>;
         };
 
         CbEnd {
             bindings = <&kp END>;
             key-positions = <13 11>;
+            timeout-ms = <25>;
         };
 
         CbHome {
             bindings = <&kp HOME>;
             key-positions = <12 10>;
+            timeout-ms = <25>;
         };
 
         CkBootloader {
             bindings = <&bootloader>;
             key-positions = <3 2 1 0>;
+            timeout-ms = <100>;
         };
 
         CbPause {
             bindings = <&kp C_PAUSE>;
             key-positions = <14 13>;
+            timeout-ms = <25>;
         };
 
         CbAria {
             bindings = <&Aria>;
             key-positions = <23 22>;
+            timeout-ms = <25>;
         };
     };
 
