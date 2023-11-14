@@ -120,6 +120,11 @@
             bindings = <&kp C_PAUSE>;
             key-positions = <14 13>;
         };
+
+        CbAria {
+            bindings = <&Aria>;
+            key-positions = <23 22>;
+        };
     };
 
     macros {
@@ -153,6 +158,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>;
             label = "UNDO";
+        };
+
+        Aria: Aria {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(SLASH)>;
+            label = "ARIA";
         };
     };
 
