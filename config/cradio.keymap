@@ -230,7 +230,7 @@
 
         CbSemi {
             bindings = <&kp SEMI>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
             timeout-ms = <100>;
             layers = <0>;
         };
@@ -422,6 +422,13 @@
             key-positions = <4 0>;
             timeout-ms = <100>;
             layers = <0 2 1 3 4>;
+        };
+
+        CbFSlash {
+            bindings = <&kp SLASH>;
+            key-positions = <27 26>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
     };
 
