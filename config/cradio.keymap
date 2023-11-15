@@ -232,28 +232,32 @@
         StickyShft: StickyShft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>;
+            bindings = <&sk LSHFT>, <&macro_tap>;
+
             label = "STICKYSHFT";
         };
 
         stickyCtrl: stickyCtrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_CONTROL>;
+            bindings = <&sk LEFT_CONTROL>, <&macro_tap>;
+
             label = "STICKYCTRL";
         };
 
         StickyAlt: StickyAlt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT>;
+            bindings = <&sk LEFT_ALT>, <&macro_tap>;
+
             label = "STICKYALT";
         };
 
         StickyGui: StickyGui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_GUI>;
+            bindings = <&sk LEFT_GUI>, <&macro_tap>;
+
             label = "STICKYGUI";
         };
     };
