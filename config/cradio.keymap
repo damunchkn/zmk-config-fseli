@@ -82,7 +82,7 @@
         };
 
         CbPass {
-            bindings = <&password>;
+            bindings = <&pass>;
             key-positions = <2 1>;
             timeout-ms = <25>;
             layers = <0>;
@@ -426,11 +426,11 @@
     };
 
     macros {
-        password: password {
+        pass: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(E) &kp LS(L) &kp I &kp N0 &kp N8 &kp N1 &kp N3 &kp N0 &kp N7 &kp POUND &kp N1 &kp N3>;
-            label = "PASSWORD";
+            label = "PASS";
         };
 
         email: email {
