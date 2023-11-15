@@ -33,7 +33,6 @@
             bindings = <&StickyShft>;
             key-positions = <13 12>;
             timeout-ms = <25>;
-            slow-release;
             layers = <0>;
         };
 
@@ -41,7 +40,6 @@
             bindings = <&stickyCtrl>;
             key-positions = <12 11>;
             timeout-ms = <25>;
-            slow-release;
             layers = <0>;
         };
 
@@ -49,7 +47,6 @@
             bindings = <&StickyAlt>;
             key-positions = <10 11>;
             timeout-ms = <25>;
-            slow-release;
             layers = <0>;
         };
 
@@ -57,7 +54,6 @@
             bindings = <&StickyGui>;
             key-positions = <13 10>;
             timeout-ms = <25>;
-            slow-release;
             layers = <0>;
         };
 
@@ -120,14 +116,14 @@
 
         CbTabUp {
             bindings = <&kp LC(PG_UP)>;
-            key-positions = <13 11>;
+            key-positions = <12 10>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
         CbTabDown {
             bindings = <&kp LC(PAGE_DOWN)>;
-            key-positions = <12 10>;
+            key-positions = <11 13>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -194,6 +190,13 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        CbCtrlBackspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <16 17>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -215,9 +218,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
                 <&kp LA(TAB) &mo 1>,
                 <&macro_pause_for_release>,
-                <&kp LA(TAB) &mo 1>;
+                <&kp LA(TAB) &mo 1>,
+                <&macro_release>;
 
             label = "ALT_TAB";
         };
