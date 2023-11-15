@@ -118,14 +118,14 @@
             layers = <0>;
         };
 
-        CbEnd {
+        CbTabUp {
             bindings = <&kp LC(PG_UP)>;
             key-positions = <13 11>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        CbHome {
+        CbTabDown {
             bindings = <&kp LC(PAGE_DOWN)>;
             key-positions = <12 10>;
             timeout-ms = <25>;
@@ -200,7 +200,7 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp S &kp N &kp I &kp P &kp E &kp S &kp E &kp L &kp I &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp S &kp N &kp I &kp P &kp E &kp S &kp E &kp L &kp I &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL";
         };
 
@@ -218,7 +218,7 @@
         Username: Username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(K) &kp I &kp T &kp E &kp S &kp LS(A) &kp N &kp D &kp LS(D) &kp A &kp R &kp T &kp S>;
+            bindings = <&kp LS(K) &kp I &kp T &kp E &kp S &kp LS(A) &kp N &kp D &kp LS(D) &kp A &kp R &kp T &kp S>;
             label = "USERNAME";
         };
     };
