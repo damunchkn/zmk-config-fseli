@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         CbShft {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&StickyShft>;
             key-positions = <13 12>;
             timeout-ms = <25>;
             slow-release;
@@ -38,7 +38,7 @@
         };
 
         CbCtrl {
-            bindings = <&sk LEFT_CONTROL>;
+            bindings = <&stickyCtrl>;
             key-positions = <12 11>;
             timeout-ms = <25>;
             slow-release;
@@ -46,7 +46,7 @@
         };
 
         CbAlt {
-            bindings = <&sk LEFT_ALT>;
+            bindings = <&StickyAlt>;
             key-positions = <10 11>;
             timeout-ms = <25>;
             slow-release;
@@ -54,7 +54,7 @@
         };
 
         CbGui {
-            bindings = <&sk LEFT_GUI>;
+            bindings = <&StickyGui>;
             key-positions = <13 10>;
             timeout-ms = <25>;
             slow-release;
@@ -132,9 +132,9 @@
             layers = <0>;
         };
 
-        CbBootloader {
+        CbBootloaderLeft {
             bindings = <&bootloader>;
-            key-positions = <3 2 1 0>;
+            key-positions = <3 2 1 4>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -187,6 +187,13 @@
             layers = <0>;
             timeout-ms = <25>;
         };
+
+        CbBootloaderRight {
+            bindings = <&bootloader>;
+            key-positions = <5 6 7 8>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -221,6 +228,34 @@
             bindings = <&kp LS(K) &kp I &kp T &kp E &kp S &kp LS(A) &kp N &kp D &kp LS(D) &kp A &kp R &kp T &kp S>;
             label = "USERNAME";
         };
+
+        StickyShft: StickyShft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT>;
+            label = "STICKYSHFT";
+        };
+
+        stickyCtrl: stickyCtrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_CONTROL>;
+            label = "STICKYCTRL";
+        };
+
+        StickyAlt: StickyAlt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_ALT>;
+            label = "STICKYALT";
+        };
+
+        StickyGui: StickyGui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_GUI>;
+            label = "STICKYGUI";
+        };
     };
 
     keymap {
@@ -237,10 +272,10 @@
 
         nav_layer {
             bindings = <
-&kp SLASH  &kp K_VOLUME_DOWN2  &kp UP_ARROW  &kp K_VOLUME_UP2  &tog 3       &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp ASTRK
-&kp LSHFT  &kp LEFT            &kp DOWN      &kp RIGHT         &kp UNDER    &kp SEMI   &kp N4  &kp N5  &kp N6  &kp N0
-&kp CAPS   &kp LBRC            &kp RBRC      &kp LBKT          &kp RBKT     &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BSLH
-                                             &trans            &trans       &trans     &trans
+&kp SLASH  &kp C_VOL_DN  &kp UP_ARROW  &kp C_VOL_UP  &tog 3       &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp ASTRK
+&kp LSHFT  &kp LEFT      &kp DOWN      &kp RIGHT     &kp UNDER    &kp SEMI   &kp N4  &kp N5  &kp N6  &kp N0
+&kp CAPS   &kp LBRC      &kp RBRC      &kp LBKT      &kp RBKT     &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BSLH
+                                       &trans        &trans       &trans     &trans
             >;
         };
 
@@ -257,7 +292,7 @@
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E     &kp R        &trans  &trans  &trans  &trans  &sys_reset
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &trans  &trans  &trans  &trans  &bootloader
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &trans  &trans  &trans  &trans  &to 1
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &trans  &trans  &trans  &trans  &to 0
                          &kp LALT  &kp SPACE    &trans  &trans
             >;
         };
