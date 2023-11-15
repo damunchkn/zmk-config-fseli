@@ -227,13 +227,6 @@
             layers = <0>;
         };
 
-        CbEmailShortcut {
-            bindings = <&kp C_AL_EMAIL>;
-            key-positions = <30 23>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
         CbSemi {
             bindings = <&kp SEMI>;
             key-positions = <26 27>;
@@ -244,70 +237,70 @@
         CbLeft0 {
             bindings = <&kp N0>;
             key-positions = <10 11>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <21 22>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <23 21>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <23 22>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <11 12>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft5 {
             bindings = <&kp N5>;
             key-positions = <11 13>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <13 12>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft7 {
             bindings = <&kp N7>;
             key-positions = <1 2>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft8 {
             bindings = <&kp N8>;
             key-positions = <1 3>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
         CbLeft9 {
             bindings = <&kp N9>;
             key-positions = <3 2>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <1>;
         };
 
