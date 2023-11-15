@@ -70,56 +70,56 @@
             bindings = <&alt_tab>;
             key-positions = <30 12>;
             slow-release;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0 1 2 3 4>;
         };
 
         CbEsc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbPass {
             bindings = <&pass>;
             key-positions = <2 1>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbEmail {
             bindings = <&email>;
             key-positions = <3 2>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbCopy {
             bindings = <&kp LC(C)>;
             key-positions = <30 11>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbPaste {
             bindings = <&kp LC(V)>;
             key-positions = <30 13>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbUndo {
             bindings = <&kp LC(Z)>;
             key-positions = <30 10>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbRepeat {
             bindings = <&key_repeat>;
             key-positions = <30 14>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
@@ -147,21 +147,21 @@
         CbPause {
             bindings = <&kp C_PAUSE>;
             key-positions = <14 13>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
         CbAria {
             bindings = <&kp LC(SLASH)>;
             key-positions = <23 22>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbCtrlA {
             bindings = <&kp LC(A)>;
             key-positions = <22 21>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
@@ -183,14 +183,14 @@
             bindings = <&kp C_MUTE>;
             key-positions = <21 20>;
             layers = <0>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
         };
 
         CbPower {
             bindings = <&kp C_POWER>;
-            key-positions = <24 23 21 22 23 24 25 26 27 28>;
+            key-positions = <24 23 22 23 24 25 26 27>;
             layers = <0>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
         };
 
         CbBootloaderRight {
@@ -217,21 +217,21 @@
         CbLeftPar {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 6>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbRightPar {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbSemi {
             bindings = <&kp SEMI>;
             key-positions = <26 27>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
