@@ -59,10 +59,11 @@
         };
 
         CbGui {
-            bindings = <&StickyGui>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <13 10>;
             timeout-ms = <25>;
             layers = <0>;
+            slow-release;
         };
 
         CbAltTab {
