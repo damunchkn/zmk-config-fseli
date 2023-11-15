@@ -197,6 +197,13 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        CbCadLayer {
+            bindings = <&tog 4>;
+            key-positions = <31 30>;
+            timeout-ms = <25>;
+            layers = <0 3 4>;
+        };
     };
 
     macros {
@@ -303,6 +310,15 @@
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &trans  &trans  &trans  &trans  &bootloader
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &trans  &trans  &trans  &trans  &to 0
                          &kp LALT  &kp SPACE    &trans  &trans
+            >;
+        };
+
+        cad_layer {
+            bindings = <
+&kp ESC  &kp N7  &kp N8  &kp N9     &kp LEFT     &trans  &trans  &trans  &trans  &trans
+&kp N0   &kp N4  &kp N5  &kp N6     &kp RIGHT    &trans  &trans  &trans  &trans  &trans
+&kp DOT  &kp N1  &kp N2  &kp N3     &kp MINUS    &trans  &trans  &trans  &trans  &trans
+                         &kp LSHFT  &kp BSPC     &trans  &trans
             >;
         };
     };
