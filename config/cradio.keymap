@@ -204,6 +204,209 @@
             timeout-ms = <25>;
             layers = <0 3 4>;
         };
+
+        CbLeftPar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <7 6>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbRightPar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <7 8>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbEmailShortcut {
+            bindings = <&kp C_AL_EMAIL>;
+            key-positions = <30 23>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbSemi {
+            bindings = <&kp SEMI>;
+            key-positions = <26 27>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeft0 {
+            bindings = <&kp N0>;
+            key-positions = <10 11>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <21 22>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <23 21>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <23 22>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <11 12>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft5 {
+            bindings = <&kp N5>;
+            key-positions = <11 13>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <13 12>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft7 {
+            bindings = <&kp N7>;
+            key-positions = <1 2>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft8 {
+            bindings = <&kp N8>;
+            key-positions = <1 3>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeft9 {
+            bindings = <&kp N9>;
+            key-positions = <3 2>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        CbLeftJ {
+            bindings = <&kp J>;
+            key-positions = <4 31>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftL {
+            bindings = <&kp L>;
+            key-positions = <31 3>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftU {
+            bindings = <&kp U>;
+            key-positions = <31 2>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftY {
+            bindings = <&kp Y>;
+            key-positions = <31 1>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftQuote {
+            bindings = <&kp SQT>;
+            key-positions = <31 0>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftM {
+            bindings = <&kp M>;
+            key-positions = <31 14>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftN {
+            bindings = <&kp N>;
+            key-positions = <31 13>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftE {
+            bindings = <&kp E>;
+            key-positions = <31 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftI {
+            bindings = <&kp I>;
+            key-positions = <31 11>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftO {
+            bindings = <&kp O>;
+            key-positions = <31 10>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftComma {
+            bindings = <&kp COMMA>;
+            key-positions = <24 31>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftH {
+            bindings = <&kp H>;
+            key-positions = <31 23>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftB {
+            bindings = <&kp B>;
+            key-positions = <31 22>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftK {
+            bindings = <&kp K>;
+            key-positions = <31 21>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        CbLeftTab {
+            bindings = <&kp TAB>;
+            key-positions = <31 20>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
     };
 
     macros {
