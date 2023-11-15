@@ -45,7 +45,7 @@
         };
 
         CbCtrl {
-            bindings = <&stickyCtrl>;
+            bindings = <&StickyCtrl>;
             key-positions = <12 11>;
             timeout-ms = <25>;
             layers = <0>;
@@ -465,15 +465,15 @@
         StickyShft: StickyShft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&macro_tap>;
+            bindings = <&macro_press>, <&sk LEFT_SHIFT>, <&macro_release>;
 
             label = "STICKYSHFT";
         };
 
-        stickyCtrl: stickyCtrl {
+        StickyCtrl: StickyCtrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_CONTROL>, <&macro_tap>;
+            bindings = <&macro_press>, <&sk LCTRL>, <&macro_release>;
 
             label = "STICKYCTRL";
         };
@@ -481,17 +481,9 @@
         StickyAlt: StickyAlt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT>, <&macro_tap>;
+            bindings = <&macro_press>, <&sk LEFT_ALT>, <&macro_release>;
 
             label = "STICKYALT";
-        };
-
-        StickyGui: StickyGui {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_GUI>, <&macro_tap>;
-
-            label = "STICKYGUI";
         };
     };
 
