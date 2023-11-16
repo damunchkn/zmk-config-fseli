@@ -167,14 +167,14 @@
 
         CbHome {
             bindings = <&kp HOME>;
-            key-positions = <18 17>;
+            key-positions = <30 2>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
         CbEnd {
             bindings = <&kp END>;
-            key-positions = <18 19>;
+            key-positions = <30 3>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -430,6 +430,13 @@
             timeout-ms = <100>;
             layers = <0>;
         };
+
+        CbTaskManager {
+            bindings = <&TaskManager>;
+            key-positions = <30 4>;
+            timeout-ms = <100>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -494,6 +501,13 @@
 
             label = "STICKYCTRL";
             tap-ms = <5>;
+        };
+
+        TaskManager: TaskManager {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp LEFT_SHIFT &kp ESC>;
+            label = "TASKMANAGER";
         };
     };
 
