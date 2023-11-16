@@ -103,7 +103,7 @@
         };
 
         CbPaste {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LC(LG(LA(V)))>;
             key-positions = <30 13>;
             timeout-ms = <100>;
             layers = <0>;
@@ -435,6 +435,27 @@
             bindings = <&TaskManager>;
             key-positions = <30 4>;
             timeout-ms = <100>;
+            layers = <0>;
+        };
+
+        CbAltSpace {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <12 13 11>;
+            timeout-ms = <25>;
+            layers = <0 1 2 3 4>;
+        };
+
+        CbTextExtractor {
+            bindings = <&kp LS(LG(T))>;
+            key-positions = <30 24>;
+            timeout-ms = <25>;
+            layers = <0 1 2 3 4>;
+        };
+
+        CbCtrlDel {
+            bindings = <&kp LC(DEL)>;
+            key-positions = <17 18>;
+            timeout-ms = <25>;
             layers = <0>;
         };
     };
