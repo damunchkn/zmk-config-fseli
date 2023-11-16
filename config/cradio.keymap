@@ -41,28 +41,28 @@
             bindings = <&StickyShft>;
             key-positions = <12 13>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <0 1 2 4>;
         };
 
         CbCtrl {
             bindings = <&StickyCtrl>;
             key-positions = <12 11>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <0 1 2 4>;
         };
 
         CbAlt {
             bindings = <&StickyAlt>;
             key-positions = <10 11>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <0 1 2 4>;
         };
 
         CbGui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <13 10>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <0 1 2 4>;
             slow-release;
         };
 
@@ -78,7 +78,6 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
             timeout-ms = <100>;
-            layers = <0>;
         };
 
         CbPass {
