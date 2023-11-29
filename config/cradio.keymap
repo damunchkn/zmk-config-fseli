@@ -23,12 +23,20 @@
             bindings = <&kp>, <&kp>;
         };
 
-        Td1copy2paste: Td1copy2paste {
+        TD1copy2paste: TD1copy2paste {
             compatible = "zmk,behavior-tap-dance";
             label = "TD1COPY2PASTE";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp C_AC_COPY>, <&kp C_AC_PASTE>;
+        };
+
+        TD1Shift2Z: TD1Shift2Z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1SHIFT2Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&StickyShft>, <&kp Z>;
         };
     };
 };
@@ -167,14 +175,14 @@
         CbHome {
             bindings = <&kp HOME>;
             key-positions = <30 2>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         CbEnd {
             bindings = <&kp END>;
             key-positions = <30 3>;
-            timeout-ms = <25>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
@@ -216,7 +224,7 @@
         CbLeftPar {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 6>;
-            timeout-ms = <100>;
+            timeout-ms = <25>;
             layers = <0>;
         };
 
@@ -536,17 +544,17 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P        &kp PERIOD    &kp J      &kp L      &kp U  &kp Y  &kp SQT
-&kp A  &kp R  &kp S  &kp T        &kp G         &kp M      &kp N      &kp E  &kp I  &kp O
-&kp Z  &kp X  &kp C  &kp D        &kp V         &kp COMMA  &kp H      &kp B  &kp K  &kp TAB
-                     &lt 1 ENTER  &kp SPACE     &kp BSPC   &lt 2 DEL
+&kp Q        &kp W  &kp F  &kp P        &kp PERIOD    &kp J      &kp L      &kp U  &kp Y  &kp SQT
+&kp A        &kp R  &kp S  &kp T        &kp G         &kp M      &kp N      &kp E  &kp I  &kp O
+&TD1Shift2Z  &kp X  &kp C  &kp D        &kp V         &kp COMMA  &kp H      &kp B  &kp K  &kp TAB
+                           &lt 1 ENTER  &kp SPACE     &kp BSPC   &lt 2 DEL
             >;
         };
 
         nav_layer {
             bindings = <
 &kp SLASH  &kp C_VOL_DN  &kp UP_ARROW  &kp C_VOL_UP  &kp UNDER         &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp ASTRK
-&kp LSHFT  &kp LEFT      &kp DOWN      &kp RIGHT     &Td1copy2paste    &kp SEMI   &kp N4  &kp N5  &kp N6  &kp N0
+&kp LSHFT  &kp LEFT      &kp DOWN      &kp RIGHT     &TD1copy2paste    &kp SEMI   &kp N4  &kp N5  &kp N6  &kp N0
 &kp CAPS   &kp LBRC      &kp RBRC      &kp LBKT      &kp RBKT          &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BSLH
                                        &trans        &trans            &trans     &trans
             >;
