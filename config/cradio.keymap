@@ -22,14 +22,15 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-
-        TD1copy2paste: TD1copy2paste {
+         td0: TD1Shift2Z {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD1COPY2PASTE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp C_AC_COPY>, <&kp C_AC_PASTE>;
+            label = "TD1Shift2Z";
+            #binding-cells = <21>;
+            tapping-term-ms = <300>;
+            bindings = <&StikyShft>, <&kp Z>;
         };
+    };
+        
 
         TD1Shift2Z: TD1Shift2Z {
             compatible = "zmk,behavior-tap-dance";
