@@ -39,8 +39,6 @@
             tapping-term-ms = <200>;
             bindings = <&StickyShft>, <&kp Z>;
         };
-    };
-};
 
 / {
     combos {
