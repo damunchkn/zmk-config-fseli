@@ -32,7 +32,7 @@
     };
         
 
-        TD1Shift2Z: TD1Shift2Z {
+        td1: TD1Shift2Z {
             compatible = "zmk,behavior-tap-dance";
             label = "TD1SHIFT2Z";
             #binding-cells = <0>;
