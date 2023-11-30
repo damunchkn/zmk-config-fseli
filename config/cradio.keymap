@@ -40,7 +40,6 @@
             bindings = <&StickyShft>, <&kp Z>;
         };
 
-/ {
     combos {
         compatible = "zmk,combos";
 
