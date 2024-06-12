@@ -534,10 +534,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W  &kp F  &kp P        &kp PERIOD    &kp J      &kp L      &kp U  &kp Y  &kp SQT
-&kp A        &kp R  &kp S  &kp T        &kp G         &kp M      &kp N      &kp E  &kp I  &kp O
-&TD1Shift2Z  &kp X  &kp C  &kp D        &kp V         &kp COMMA  &kp H      &kp B  &kp K  &kp TAB
-                           &lt 1 ENTER  &kp SPACE     &kp BSPC   &lt 2 DEL
+&kp Q  &kp W  &kp F  &kp P        &kp PERIOD    &kp J      &kp L      &kp U  &kp Y  &kp SQT
+&kp A  &kp R  &kp S  &kp T        &kp G         &kp M      &kp N      &kp E  &kp I  &kp O
+&kp Z  &kp X  &kp C  &kp D        &kp V         &kp COMMA  &kp H      &kp B  &kp K  &kp TAB
+                     &lt 1 ENTER  &kp SPACE     &kp BSPC   &lt 2 DEL
             >;
         };
 
