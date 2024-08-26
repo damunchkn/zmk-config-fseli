@@ -100,7 +100,7 @@
         };
 
         CbPaste {
-            bindings = <&kp LC(LG(LA(V)))>;
+            bindings = <&kp LC(V)>;
             key-positions = <30 13>;
             timeout-ms = <100>;
             layers = <0>;
@@ -468,7 +468,7 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp N &kp I &kp P &kp E &kp S &kp E &kp L &kp I &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp K &kp I &kp T &kp E &kp S &kp A &kp N &kp D &kp D &kp A &kp R &kp T &kp S &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL";
         };
 
