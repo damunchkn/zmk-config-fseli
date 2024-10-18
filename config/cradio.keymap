@@ -461,7 +461,7 @@
         pass: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(E) &kp LS(L) &kp I &kp N0 &kp N8 &kp N1 &kp N3 &kp N0 &kp N7 &kp POUND &kp N1 &kp N3>;
+            bindings = <&kp LS(E) &kp LS(L) &kp I &kp N0 &kp N8 &kp N1 &kp N3 &kp N0 &kp N7 &kp POUND>;
             label = "PASS";
         };
 
