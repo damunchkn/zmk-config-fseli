@@ -2,7 +2,7 @@ if SHIELD_FSELI_DONGLE
 
 
 config ZMK_KEYBOARD_NAME
-    default "fseli_dongle"
+    default "fseli"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
