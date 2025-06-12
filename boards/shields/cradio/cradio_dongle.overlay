@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/cuddlykeyboards/ferris.dtsi>
-#import "cradio.dtsi"
+#imclude "cradio.dtsi"
 
 &cuddlykeyboards_ferris_layout {
     transform = <&default_transform>;
