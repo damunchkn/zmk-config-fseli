@@ -21,5 +21,8 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 7
 
+CONFIG_ZMK_STUDIO=y
 
 endif
+
+CONFIG_ZMK_STUDIO=y
