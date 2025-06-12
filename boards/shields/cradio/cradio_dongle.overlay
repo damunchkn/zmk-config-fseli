@@ -6,7 +6,6 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/cuddlykeyboards/ferris.dtsi>
-#include "cradio.dtsi"
 
 &cuddlykeyboards_ferris_layout {
     transform = <&default_transform>;
@@ -14,7 +13,7 @@
 
 / {
     chosen {
-        zmk,kscan = &mock_kscan;
+        zmk,kscan = &kscan0;
         zmk,physical-layout = &cuddlykeyboards_ferris_layout;
     };
 
